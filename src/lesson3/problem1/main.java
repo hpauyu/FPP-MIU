@@ -8,8 +8,8 @@ public class main {
         Address address1 = new Address("22","Chicago","Illinois","1011");
         Address address2 = new Address("22","New York","New York","1011");
         customer1.setBillingAddress(address1);
-        customer1.setShippingAddress(address1);
-        customer2.setBillingAddress(address1);
+       // customer1.setShippingAddress(address1);
+       // customer2.setBillingAddress(address1);
         customer2.setShippingAddress(address1);
         customer3.setBillingAddress(address2);
         customer3.setShippingAddress(address2);
@@ -18,7 +18,9 @@ public class main {
         customerArray[1] = customer2;
         customerArray[2] = customer3;
         for (Customer customer : customerArray){
-            if (customer.getBillingAddress().getCity().equals("Chicago")){
+            if (customer.getBillingAddress() != null &&
+            customer.getBillingAddress().getCity() != null &&
+            customer.getBillingAddress().getCity().equals("Chicago")){
                 System.out.println(customer);
             }
         }

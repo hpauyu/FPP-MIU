@@ -8,8 +8,12 @@ public class problem5 {
     }
     public static int[] combine(int[] a, int[] b){
         int[] result = new int[a.length+b.length];
-        System.arraycopy(a,0,result,0,a.length);
-        System.arraycopy(b,0,result,a.length,b.length);
+        for (int i = 0; i < a.length; i++){
+            result[i] = a[i];
+        }
+        for (int i = 0; i < b.length; i++){
+            result[i+a.length] = b[i];
+        }
         return result;
     }
 }
