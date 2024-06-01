@@ -1,4 +1,4 @@
-package lesson3.probem3;
+package lab2.probem3;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

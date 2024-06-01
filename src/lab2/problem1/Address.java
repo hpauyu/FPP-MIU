@@ -1,4 +1,4 @@
-package lesson3.problem1;
+package lab2.problem1;
 
 public class Address {
     private String street;

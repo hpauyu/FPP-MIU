@@ -1,4 +1,4 @@
-package lesson3.problem1;
+package lab2.problem1;
 
 public class main {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class main {
         customerArray[2] = customer3;
         for (Customer customer : customerArray){
             if (customer.getBillingAddress() != null &&
-            customer.getBillingAddress().getCity() != null &&
+                    customer.getBillingAddress().getCity() != null &&
             customer.getBillingAddress().getCity().equals("Chicago")){
                 System.out.println(customer);
             }

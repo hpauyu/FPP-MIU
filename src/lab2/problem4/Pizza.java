@@ -1,4 +1,4 @@
-package lesson3.problem4;
+package lab2.problem4;
 
 public class Pizza {
     private PizzaSize pizzaSize;

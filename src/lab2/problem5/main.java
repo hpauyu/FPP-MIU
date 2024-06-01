@@ -1,4 +1,4 @@
-package lesson3.problem5;
+package lab2.problem5;
 
 import java.util.Scanner;
 

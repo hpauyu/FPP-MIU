@@ -1,4 +1,4 @@
-package lesson3.problem5;
+package lab2.problem5;
 
 public final class Rectangle {
     private final double width;

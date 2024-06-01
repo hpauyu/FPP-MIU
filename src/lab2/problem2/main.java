@@ -1,4 +1,4 @@
-package lesson3.problem2;
+package lab2.problem2;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

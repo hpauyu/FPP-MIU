@@ -1,4 +1,4 @@
-package lesson3.problem1;
+package lab2.problem1;
 
 public class Customer {
     private String firstName;
@@ -10,6 +10,8 @@ public class Customer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.socSecurityNum = socSecurityNum;
+        this.billingAddress = null;
+        this.shippingAddress = null;
     }
 
     public String getFirstName() {

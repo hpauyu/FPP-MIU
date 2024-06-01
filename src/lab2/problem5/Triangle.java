@@ -1,4 +1,4 @@
-package lesson3.problem5;
+package lab2.problem5;
 
 public final class Triangle {
     private final double base;
