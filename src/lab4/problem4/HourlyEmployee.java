@@ -1,4 +1,4 @@
-package lab5.problem4;
+package lab4.problem4;
 
 public class HourlyEmployee extends Employee{
     private double wage;

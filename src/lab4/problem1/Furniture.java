@@ -1,4 +1,4 @@
-package lab5.problem1;
+package lab4.problem1;
 
 public class Furniture extends Product {
     private String material;

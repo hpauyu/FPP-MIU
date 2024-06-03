@@ -1,4 +1,4 @@
-package lab5.problem2;
+package lab4.problem2;
 
 import java.time.LocalDate;
 import java.util.Scanner;

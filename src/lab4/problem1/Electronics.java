@@ -1,4 +1,4 @@
-package lab5.problem1;
+package lab4.problem1;
 
 public class Electronics extends Product {
     private double warrantyCost;

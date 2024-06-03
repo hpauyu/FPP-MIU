@@ -1,4 +1,4 @@
-package lab5.problem4;
+package lab4.problem4;
 
 public abstract class Employee {
     private String firstName;
