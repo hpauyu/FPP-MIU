@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Temperature implements Sensor{
     private double temperature;
     private String location;
-    private LocalDateTime lastUpdated =  getLastUpdated();
+    private LocalDateTime lastUpdated = getLastUpdated();
 
     public Temperature(double temperature, String location){
         this.temperature = temperature;

@@ -3,12 +3,12 @@ package lab4.problem3;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Light implements Sensor{
+public class Light implements Sensor {
     private double lightLevel;
     private String location;
-    private LocalDateTime lastUpdated =  getLastUpdated();
+    private LocalDateTime lastUpdated = getLastUpdated();
 
-    public Light(double lightLevel, String location){
+    public Light(double lightLevel, String location) {
         this.lightLevel = lightLevel;
         this.location = location;
     }
@@ -36,7 +36,7 @@ public class Light implements Sensor{
             return "Light is sufficient";
     }
 
-    public String getStatusOfTheObject(){
+    public String getStatusOfTheObject() {
         return STR."""
                 Sensor Type: \{getSensorType()}
                 Reading : \{getReading()}

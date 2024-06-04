@@ -2,12 +2,12 @@ package lab4.problem3;
 
 import java.time.LocalDateTime;
 
-public class Sound implements Sensor{
+public class Sound implements Sensor {
     private double soundLevel;
     private String location;
-    private LocalDateTime lastUpdated =  getLastUpdated();
+    private LocalDateTime lastUpdated = getLastUpdated();
 
-    public Sound(double soundLevel, String location){
+    public Sound(double soundLevel, String location) {
         this.soundLevel = soundLevel;
         this.location = location;
     }
