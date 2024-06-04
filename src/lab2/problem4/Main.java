@@ -1,6 +1,6 @@
 package lab2.problem4;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Pizza pizza1 = new Pizza(PizzaSize.SMALL, PizzaType.VEGGIE, 2);
         Pizza pizza2 = new Pizza(PizzaSize.MEDIUM, PizzaType.PEPPERONI, 1);

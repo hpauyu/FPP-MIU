@@ -1,4 +1,4 @@
-package lab4.problem6.case1;
+package lab4.problem6.case2;
 
 public class Student extends ComproStudent {
     private String entryMonth;
@@ -22,5 +22,16 @@ public class Student extends ComproStudent {
     public String toString() {
         return STR."""
                 from \{entryMonth} of \{entryYear}""";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == null) return false;
+        if (other.getClass() != this.getClass()) return false;
+        Student otherStudent = (Student) other;
+        return getName() == otherStudent.getName() &&
+                getId() == otherStudent.getId() &&
+                getEntryMonth() == otherStudent.getEntryMonth() &&
+                getEntryYear() == otherStudent.getEntryYear();
     }
 }

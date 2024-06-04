@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.Arrays;
 
-public class problem4 {
+public class Problem4 {
     public static void main(String[] args) {
         String[] input = {"horse", "dog", "cat", "horse", "dog", "cow"};
         String[] temp = new String[input.length];

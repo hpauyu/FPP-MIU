@@ -1,4 +1,4 @@
-package lab4.problem6.case1;
+package lab4.problem6.case3;
 
 public class ComproStudent {
     private String name;
@@ -26,8 +26,9 @@ public class ComproStudent {
     @Override
     public boolean equals(Object other) {
         if (other == null) return false;
-        if (!(other instanceof ComproStudent)) return false;
-        ComproStudent otherComproStuduent = (ComproStudent) other;
-        return this.name.equals(otherComproStuduent.name) && this.id == otherComproStuduent.id;
+        if (other.getClass() != getClass()) return false;
+        ComproStudent comproStudent = (ComproStudent) other;
+        return getName().equals(comproStudent.getName()) &&
+                getId() == comproStudent.getId();
     }
 }

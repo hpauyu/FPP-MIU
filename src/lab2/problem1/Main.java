@@ -1,6 +1,6 @@
 package lab2.problem1;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Customer customer1 = new Customer("Nan","Shawng","2222");
         Customer customer2 = new Customer("Ja","Nan","2222");

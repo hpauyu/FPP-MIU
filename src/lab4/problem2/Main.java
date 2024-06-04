@@ -3,7 +3,7 @@ package lab4.problem2;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         DeptEmployee employee1 = new Professor("Renuka", 100000, LocalDate.of(2023, 02, 02), 10);
         DeptEmployee employee2 = new Professor("Payman", 90000, LocalDate.of(2022, 02, 22), 15);

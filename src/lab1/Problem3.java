@@ -1,6 +1,6 @@
 package lab1;
 
-public class problem3 {
+public class Problem3 {
     public static void main(String[] args) {
         String records = "231A,Light Bulb,123,Wilco,1.75:"+
                 "113D,Hairbrush,19,Aamco,3.75:" +
