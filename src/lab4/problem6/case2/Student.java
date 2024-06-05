@@ -1,6 +1,6 @@
 package lab4.problem6.case2;
 
-public class Student extends ComproStudent {
+public final class  Student extends ComproStudent {
     private String entryMonth;
     private int entryYear;
 
