@@ -2,7 +2,7 @@ package lab4.problem4;
 
 public class Main {
     public static void main(String[] args) {
-        Employee e1 = new CommissionEmployee("Nan Shawng", "Hpauyu", "123456", 40000, 10);
+        Employee e1 = new CommissionEmployee("Nan Shawng", "Hpauyu", "123456", 1000, 10);
         Employee e2 = new BasePlusCommissionEmployee("Sai", "Janan", "123456", 40000, 10, 2000);
         Employee e3 = new HourlyEmployee("Jumwu", "Awng", "123456", 20, 40);
         Employee e4 = new SalariedEmployee("Hkawn", "Bu", "123456", 50000);
@@ -16,7 +16,7 @@ public class Main {
         Employee result = null;
         for (Employee e : col) {
             if (e != null) {
-                if (result == null || e.getPayment() > result.getPayment()) result = e;
+                if ((result == null) || (e.getPayment() > result.getPayment())) result = e;
             }
         }
         return result;

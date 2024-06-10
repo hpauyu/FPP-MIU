@@ -31,7 +31,7 @@ public final class  Student extends ComproStudent {
         Student otherStudent = (Student) other;
         return getName() == otherStudent.getName() &&
                 getId() == otherStudent.getId() &&
-                getEntryMonth() == otherStudent.getEntryMonth() &&
+                getEntryMonth().equals(otherStudent.getEntryMonth()) &&
                 getEntryYear() == otherStudent.getEntryYear();
     }
 }

@@ -31,6 +31,9 @@ public class Main {
                     double height = Double.parseDouble(scanner.next());
                     System.out.println(String.format("The area of the Triangle is :%.2f", new Triangle(base, height).computeArea()));
                 }
+                default -> {
+                    System.out.println("ERROR");
+                }
             }
             ;
             System.out.print("Do you want to continue(y/n) : ");

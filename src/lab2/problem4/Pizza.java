@@ -21,9 +21,8 @@ public class Pizza {
         };
         double typePrice = switch (this.pizzaType) {
             case VEGGIE -> 1;
-            case PEPPERONI -> 2;
+            case PEPPERONI, BBQ_CHICKEN -> 2;
             case CHEEZE -> 1.5;
-            case BBQ_CHICKEN -> 2;
         };
         this.price = (sizePrice + typePrice) * this.quantity;
     }
@@ -31,13 +30,12 @@ public class Pizza {
     public String printOrderSummary() {
         calculatePrice();
         double tax = price * 0.03;
-        String summary = String.format("Pizza Order:\n" +
+        return String.format("Pizza Order:\n" +
                 "Size: %s\n" +
                 "Type: %s\n" +
                 "Qty: %d\n" +
                 "Price:$%.2f\n" +
                 "Tax: $%.2f\n" +
                 "Total Price: $%.2f", pizzaSize, pizzaType, quantity, price, tax, tax + price);
-        return summary;
     }
 }

@@ -18,7 +18,8 @@ public class Main {
             //reversed order ( Descending order).
             @Override
             public int compare(DeptEmployee e1, DeptEmployee e2) {
-                return Double.compare(e2.getSalary(), e1.getSalary());
+                return Double.valueOf(e2.getSalary()).compareTo(Double.valueOf(e1.getSalary()));
+                //return Double.compare(e2.getSalary(), e1.getSalary());
             }
         }
         Arrays.sort(staff, new StaffComparator());
