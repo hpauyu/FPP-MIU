@@ -1,8 +1,5 @@
 package lab7.prob3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Marketing {
 	private String employeename;
 	private String productname;
@@ -43,4 +40,13 @@ public class Marketing {
 		return employeename + " " + productname + " " + salesamount;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) return false;
+		if (!(obj instanceof Marketing)) return false;
+		Marketing marketing = (Marketing) obj;
+		return marketing.getEmployeename().equals(getEmployeename())
+				&& marketing.getProductname().equals(getProductname())
+				&& Double.valueOf(marketing.getSalesamount()).equals(Double.valueOf(getSalesamount()));
+	}
 }
