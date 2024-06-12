@@ -30,21 +30,16 @@ public class DoublyLinkedList {
     public boolean remove(String item) {
         //Implement
         Node current = header.next;
-        boolean found = false;
         while (current != null) {
             if (current.value.equals(item)) {
-                found = true;
-                break;
+                current.previous.next = current.next;
+                if (current.next != null)
+                    current.next.previous = current.previous;
+                current.next = null;
+                current.previous = null;
+                return true;
             }
             current = current.next;
-        }
-        if (found) {
-            current.previous.next = current.next;
-            if (current.next != null)
-                current.next.previous = current.previous;
-            current.next = null;
-            current.previous = null;
-            return true;
         }
         return false;
     }
