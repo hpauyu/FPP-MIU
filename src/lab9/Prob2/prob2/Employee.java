@@ -33,7 +33,7 @@ public class Employee {
 
 	@Override 
 	public String toString() { //DO NOT MODIFY
-		return "(" + ssn + ": " + name + ", " + salary + ")" ;
+		return STR."(\{ssn}: \{name}, \{salary})";
 	}
 	
 	@Override
